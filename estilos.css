@@ -1,0 +1,1100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#rectangulo{
+	background-color: #4272B6;
+  text-align: center;
+    font-size: 1.2rem;
+  color: white;
+  height: 42px;
+    padding-top: 10px;
+  box-shadow: 0px 0px 15px black;
+    width: 100%;
+}
+
+#contenedor-bombillo{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    min-width: 473px;
+    margin-top: 9px;
+    border-radius: 30px;
+    height: 800px;
+  }
+
+body{
+  background-color: #AADDF3;
+    font-family: 'Lato';
+    width: 100%;
+}
+
+#envoltura{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*padding-left: 10%;*/
+    padding-top: 20px;
+}
+
+#instruccion{
+    margin-top: 78px;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#botones{
+    z-index: 2;
+    position: relative;
+    width: 47%;
+    top: 170px;
+    left: 5%;
+}
+
+#btn-nivel1{
+    width: 100%;
+    cursor: pointer;
+    min-width: 179px;
+    margin-bottom: 10px;
+}
+
+#btn-nivel2{
+    width: 100%;
+  cursor: pointer;
+    margin-bottom: 10px;
+  visibility: hidden;
+}
+
+#btn-nivel3{
+    width: 100%;
+  cursor: pointer;
+    margin-bottom: 10px;
+  visibility: hidden;
+}
+#contenedor-preguntas{
+  width: 47%;
+}
+
+/*-----------------bombillos---------------------*/
+#bombillo-apagado{
+    width: 34%;
+    position: relative;
+    top: -120px;
+    left: 30%;
+    min-width: 135px;
+    z-index: 3;
+}
+
+#bombillo-prendido1{
+    width: 34%;
+    position: relative;
+    top: -120px;
+    left: 30%;
+    min-width: 135px;
+  display: none;
+    z-index: 3;
+  
+}
+
+#bombillo-prendido2{
+    width: 34%;
+    position: relative;
+    top: -120px;
+    left: 30%;
+    min-width: 135px;
+  display: none;
+    z-index: 3;
+}
+
+#bombillo-prendido3{
+    width: 34%;
+    position: relative;
+    top: -120px;
+    left: 30%;
+    min-width: 135px;
+  display: none;
+    z-index: 3;
+}
+/*-----------------bombillos---------------------*/
+
+
+
+/*-----------------------pregunta 1----------------------------*/
+#pregunta1{
+    width: 100%;
+    margin-top: 16px;
+  visibility: hidden;
+    min-width: 636px;
+  
+}
+
+#opciones-p1{
+      width: 570px;
+    position: relative;
+    top: -175px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 22%;
+    display: none;
+}
+
+#opciones-p1 label{
+    margin-top: 10px;
+}
+
+#error-p1{
+position: relative;
+    top: -166px;
+    margin-left: 15%;
+    color: red;
+  display: none;
+    width: 600px;
+}
+
+#correcto-p1{
+position: relative;
+    top: -166px;
+    margin-left: 116px;
+    color: green;
+  display: none;
+    width: 600px;
+}
+
+#siguiente-p1{
+    width: 25%;
+    margin-left: 65%;
+    position: relative;
+    top: -161px;
+  cursor: pointer;
+  display: none;
+    min-width: 143px;
+}
+
+/*-----------------------pregunta 1----------------------------*/
+
+/*pregunta2*/
+#pregunta2{
+    width: 100%;
+    position: relative;
+    display: none;
+    top: -582px;
+    margin-left: -61px;
+    min-width: 635px;
+}
+#siguiente-p2{
+  width: 26%;
+    position: relative;
+    top: -704px;
+    margin-left: 60%;
+  cursor: pointer;
+  display: none;
+    min-width: 143px;
+}
+/*pregunta2*/
+
+
+
+/*pregunta3*/
+#texto-1{
+  display: none;
+  width: 800px;
+    position: relative;
+    top: -594px;
+}
+
+#ref-15{
+  
+  position: absolute;
+    top: 189px;
+    margin-left: 343px;
+    width: 182px;
+    background-color: #F9C5E6;
+    color: #B21C74;
+    display: none;
+    
+    border: 2px solid #B21C74;
+ 
+}
+
+#numero-15{
+  
+  position: relative;
+    top: -1077px;
+    margin-left: 417px;
+    width: 11px;
+    background-color: #F9C5E6;
+    border: 2px solid #B21C74;
+  display: none;
+    color: #B21C74;
+    font-size: 9px;
+ 
+}
+
+#numero-15:hover + #ref-15{
+ display: block;
+}
+
+
+
+
+#ref-14{
+  
+position: absolute;
+    top: 135px;
+    margin-left: 670px;
+    width: 84px;
+    background-color: #F9C5E6;
+    color: #B21C74;
+    
+    border: 2px solid #B21C74;
+    display: none;
+}
+
+#numero-14{
+  
+  position: relative;
+    top: -1142px;
+    margin-left: 705px;
+    font-size: 9px;
+    width: 11px;
+    background-color: #F9C5E6;
+    border: 2px solid #B21C74;
+    color: #B21C74;
+  display: none;
+ 
+}
+
+#numero-14:hover + #ref-14{
+ display: block;
+}
+
+
+#ref-13{
+  
+position: absolute;
+    top: 328px;
+    margin-left: 680px;
+    width: 180px;
+    background-color: #F9C5E6;
+    color: #B21C74;
+    display: none;
+    border: 2px solid #B21C74;
+	display: none;
+    
+}
+
+#numero-13{
+      
+ position: relative;
+    top: -935px;
+    margin-left: 760px;
+    font-size: 9px;
+    width: 11px;
+    background-color: #F9C5E6;
+    border: 2px solid #B21C74;
+    color: #B21C74;
+	display: none;
+  
+ 
+}
+
+#numero-13:hover + #ref-13{
+ display: block;
+}
+
+
+
+
+#texto-2{
+  display: none;
+  width: 800px;
+    position: relative;
+    top: -594px;
+}
+
+#comparaciones{
+   display: none;
+  width: 800px;
+    position: relative;
+    bottom: 594px;
+    margin-right: 24px;
+}
+
+#flecha{
+  display: none;
+  width: 79px;
+    position: relative;
+    top: -689px;
+    margin-left: 672px;
+  cursor: pointer;
+}
+
+#siguiente-p3{
+  display: none;
+      width: 204px;
+    margin-left: 563px;
+    position: relative;
+    top: -700px;
+    cursor: pointer;
+}
+/*pregunta3*/
+
+
+/*comparaciones*/
+#clausulas1{
+     margin-left: 340px;
+    position: relative;
+    top: -1033px;
+    display: none;
+    width: 151px;
+}
+
+#clausulas2{
+    margin-left: 575px;
+    position: relative;
+    top: -1050px;
+    width: 158px;
+    display: none;
+}
+
+#principios1{
+  display: none;
+     margin-left: 340px;
+    position: relative;
+    top: -990px;
+    width: 153px;
+}
+
+#principios2{
+  display: none;
+ margin-left: 574px;
+    position: relative;
+    top: -1011px;
+    width: 158px;
+}
+#principios3{
+    display: none;
+    margin-left: 340px;
+    position: relative;
+    top: -973px;
+    width: 155px;
+}
+#principios4{
+    display: none;
+    margin-left: 575px;
+    position: relative;
+    top: -992px;
+    width: 155px;
+}
+
+#decisiones1{
+    display: none;
+    margin-left: 342px;
+    position: relative;
+    top: -887px;
+    width: 155px;
+}
+
+#decisiones2{
+  display: none;
+    margin-left: 342px;
+    position: relative;
+    top: -860px;
+    width: 155px;
+}
+
+#verificar{
+    display: none;
+    position: relative;
+    width: 182px;
+    top: -795px;
+    left: -322px;
+    cursor: pointer;
+}
+
+#siguiente-p4{
+    display: none;
+    position: relative;
+    width: 182px;
+    top: -845px;
+    margin-left: 571px;
+    cursor: pointer;
+}
+
+#fin{
+    display: none;
+    width: 624px;
+    left: 59px;
+    position: relative;
+    top: -618px;
+}
+
+#btn-terminar{
+  display: none;
+      width: 200px;
+    margin-left: 409px;
+    position: relative;
+    bottom: 685px;
+    cursor: pointer;
+}
+
+#felicitaciones{
+  display: none;
+  width: 471px;
+    margin-left: 122px;
+    position: relative;
+    bottom: 539px;
+}
+
+#cerrar{
+  display: none;
+  margin-left: 563px;
+    width: 41px;
+    position: relative;
+    bottom: 826px;
+}
+
+#cerrar-arriba{
+      display: block;
+      right: -96%;
+    width: 32px;
+    position: relative;
+    top: -23px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/*breakPoints*/
+
+@media only screen and (max-width: 1800px) {
+    #botones{
+       top: 128px; 
+    }
+    
+    #bombillo-apagado{
+        top:-145px;
+    }
+    
+    #bombillo-prendido1{
+        top:-145px;
+    }
+    
+    #bombillo-prendido2{
+        top:-145px;
+    }
+    
+    #bombillo-prendido3{
+        top:-145px;
+    }
+    
+    
+    #pregunta1{
+        margin-top: 55px;
+    }
+    
+    #pregunta2{
+    top: -510px;
+    }
+    
+    #siguiente-p2{
+    top: -635px;
+    margin-left: 60%;
+    }
+    
+    #texto-1{
+      width: 700px;
+        top: -535px;
+    }
+    
+    #texto-2{
+      width: 700px;
+        top: -535px;
+    }
+    
+    #ref-14{
+        top: 175px;
+        margin-left: 585px;
+        width: 84px;
+    }
+
+    #numero-14{
+        top: -1020px;
+        margin-left: 616px;
+    }
+    
+    #ref-15{
+        top: 228px;
+        margin-left: 295px;
+    }
+
+    #numero-15{
+        top: -958px;
+        margin-left: 364px;
+    }
+    
+    #ref-13{
+        top: 357px;
+        margin-left: 590px;
+    }
+
+    #numero-13{
+        top: -833px;
+        margin-left: 667px;
+        font-size: 9px;
+        width: 11px;
+    }
+    
+    #flecha{
+      width: 75px;
+        top: -645px;
+        margin-left: 580px;
+    }
+
+    #siguiente-p3{
+          width: 204px;
+        margin-left: 467px;
+        top: -625px;
+    }
+    
+    #comparaciones{
+        
+      width: 700px;
+        top: -535px;
+    }
+    
+    #clausulas1{
+         margin-left: 298px;
+        top: -920px;
+        width: 130px;
+    }
+    
+    #clausulas2{
+        margin-left: 490px;
+        top: -940px;
+        width: 130px;
+    }
+    
+    #principios1{
+        margin-left: 298px;
+        top: -886px;
+        width: 130px;
+    }
+    
+    #principios2{
+        margin-left: 490px;
+        top: -906px;
+        width: 127px;
+    }
+    
+
+    #principios3{
+        margin-left: 298px;
+        top: -877px;
+        width: 130px;
+    }
+    
+    #principios4{
+        margin-left: 490px;
+        top: -896px;
+        width: 127px;
+    }
+
+    #decisiones1{
+        margin-left: 299px;
+        top: -803px;
+        width: 129px;
+    }
+
+    #decisiones2{
+        margin-left: 299px;
+        top: -782px;
+        width: 129px;
+    }
+    
+    #verificar{
+        width: 182px;
+        top: -730px;
+        left: -282px;
+    }
+
+    #siguiente-p4{
+        width: 182px;
+        top: -781px;
+        margin-left: 480px;
+    }
+    
+}
+
+@media only screen and (max-width: 1610px) {
+    #botones{
+       top: 95px; 
+    }
+    
+    #envoltura{
+    }
+    
+    #pregunta1{
+        margin-top: 70px;
+    }
+    
+    #opciones-p1{
+        top:-150px;
+        font-size: 13px;
+        width: 480px;
+    }
+    
+    #correcto-p1{
+        top: -140px;
+        font-size: 13px;
+        width: 480px;
+    }
+
+    #siguiente-p1{
+        top: -130px;
+    }
+    
+    #error-p1{
+        top: -130px;
+        width: 540px;
+        font-size: 13px;
+    }
+    
+    #pregunta2{
+    top: -485px;
+    }
+    
+    #siguiente-p2{
+    top: -590px;
+    margin-left: 60%;
+    }
+    
+    #texto-1{
+      width: 700px;
+        top: -535px;
+    }
+
+    #texto-2{
+      width: 700px;
+        top: -535px;
+    }
+    
+    #comparaciones{
+        
+      width: 700px;
+        top: -535px;
+    }
+    
+    #ref-14{
+        top: 142px;
+        margin-left: 575px;
+    }
+    
+    #ref-15{
+        top: 189px;
+        margin-left: 295px;
+    }
+
+    #numero-15{
+        top: -958px;
+        margin-left: 364px;
+        font-size: 8px;
+    }
+    #numero-14{
+        font-size: 8px;
+    }
+
+    #numero-13{
+        font-size: 8px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1370px) {
+    #botones{
+       top: 80px; 
+    }
+    
+    #bombillo-apagado{
+        top:-132px;
+    }
+    
+    #bombillo-prendido1{
+        top:-132px;
+    }
+    
+    #bombillo-prendido2{
+        top:-132px;
+    }
+    
+    #bombillo-prendido3{
+        top:-132px;
+    }
+        
+    #instruccion{
+    font-size: 18px;
+    }
+
+    #envoltura{
+    }
+    
+    #pregunta1{
+        margin-top: 80px;
+    }
+    
+    #opciones-p1{
+        top:-130px;
+    }
+    
+    #correcto-p1{
+        top: -125px;
+        font-size: 13px;
+        width: 480px;
+    }
+
+    #siguiente-p1{
+        top: -123px;
+    }
+    
+    #pregunta2{
+    top: -445px;
+    }
+    
+    #siguiente-p2{
+    top: -535px;
+    margin-left: 60%;
+    }
+    
+    #texto-1{
+      width: 650px;
+        top: -480px;
+    }
+    
+    #texto-2{
+      width: 650px;
+        top: -480px;
+    }
+    
+    #comparaciones{
+        
+      width: 650px;
+        top: -480px;
+    }
+    
+    #ref-14{
+        top: 128px;
+        margin-left: 532px;
+        width: 84px;
+    }
+
+    #numero-14{
+        top: -930px;
+        margin-left: 572px;
+    }
+    
+    #ref-15{
+        top: 175px;
+        margin-left: 260px;
+    }
+
+    #numero-15{
+        top: -869px;
+        margin-left: 338px;
+    }
+    
+    #ref-13{
+        top: 282px;
+        margin-left: 545px;
+    }
+
+    #numero-13{
+        top: -758px;
+        margin-left: 620px;
+        width: 10px;
+    }
+    
+    #flecha{
+      width: 75px;
+        top: -598px;
+        margin-left: 536px;
+    }
+
+    #siguiente-p3{
+          width: 170px;
+        margin-left: 420px;
+        top: -565px;
+    }
+    
+    #clausulas1{
+         margin-left: 279px;
+        top: -840px;
+        width: 125px;
+    }
+    
+    #clausulas2{
+        margin-left: 460px;
+        top: -859px;
+        width: 130px;
+    }
+    
+    #principios1{
+        margin-left: 279px;
+        top: -810px;
+        width: 130px;
+    }
+    
+    #principios2{
+        margin-left: 460px;
+        top: -830px;
+        width: 127px;
+    }
+
+    #principios3{
+        margin-left: 279px;
+        top: -804px;
+        width: 130px;
+    }
+    
+    #principios4{
+        margin-left: 460px;
+        top: -823px;
+        width: 127px;
+    }
+
+    #decisiones1{
+        margin-left: 279px;
+        top: -760px;
+        width: 129px;
+    }
+
+    #decisiones2{
+        margin-left: 279px;
+        top: -770px;
+        width: 129px;
+    }
+    
+    #verificar{
+        width: 182px;
+        top: -686px;
+        left: -278px;
+    }
+
+    #siguiente-p4{
+        width: 182px;
+        top: -736px;
+        margin-left: 445px;
+    }
+
+    #fin{
+        top: -540px;
+    }
+    
+    #btn-terminar{
+        bottom: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 1270px) {
+    #botones{
+       top: 70px; 
+    }
+    
+    #instruccion{
+    font-size: 15px;
+    }
+    
+    #envoltura{
+    }
+    
+    #pregunta2{
+    top: -475px;
+    }
+    
+    #siguiente-p2{
+    top: -560px;
+    margin-left: 60%;
+    }
+
+    #siguiente-p3{
+        width: 170px;
+        margin-left: 420px;
+        top: -590px;
+    }
+
+    #decisiones2{
+        margin-left: 279px;
+        top: -740px;
+        width: 129px;
+    }
+    
+    #verificar{
+        width: 182px;
+        top: -705px;
+        left: 140px;
+    }
+
+    #siguiente-p4{
+        width: 182px;
+        top: -754px;
+        margin-left: 480px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    #bombillo-apagado{
+        top:-120px;
+    }
+    
+    #bombillo-prendido1{
+        top:-120px;
+    }
+    
+    #bombillo-prendido2{
+        top:-120px;
+    }
+    
+    #bombillo-prendido3{
+        top:-120px;
+    }
+    
+    
+    #envoltura{
+    }
+
+    #siguiente-p1{
+        margin-left: 455px;
+    }
+    
+    #opciones-p1{
+        margin-left:120px;
+    }
+    
+    #error-p1{
+        margin-left: 100px;
+    }
+    
+    #pregunta2{
+    top: -500px;
+    }
+    
+    #siguiente-p2{
+    top: -585px;
+    margin-left: 350px;
+    }
+    
+    #texto-1{
+      width: 650px;
+        top: -510px;
+    }
+    
+    #texto-2{
+      width: 650px;
+        top: -510px;
+    }
+    
+    #comparaciones{
+        
+      width: 650px;
+        top: -510px;
+    }
+    
+    #ref-14{
+        top: 95px;
+        margin-left: 545px;
+        width: 84px;
+    }
+
+    #numero-14{
+        top: -960px;
+        margin-left: 572px;
+    }
+    
+    #ref-15{
+        top: 147px;
+        margin-left: 260px;
+    }
+
+    #numero-15{
+        top: -897px;
+        margin-left: 338px;
+    }
+    
+    #ref-13{
+        top: 257px;
+        margin-left: 506px;
+    }
+
+    #numero-13{
+        top: -782px;
+        margin-left: 623px;
+        width: 10px;
+    }
+    
+    #clausulas1{
+         margin-left: 279px;
+        top: -865px;
+        width: 125px;
+    }
+    
+    #clausulas2{
+        margin-left: 460px;
+        top: -885px;
+        width: 130px;
+    }
+    
+    #principios1{
+        margin-left: 279px;
+        top: -840px;
+        width: 130px;
+    }
+    
+    #principios2{
+        margin-left: 460px;
+        top: -860px;
+        width: 127px;
+    }
+
+    #principios3{
+        margin-left: 279px;
+        top: -835px;
+        width: 130px;
+    }
+    
+    #principios4{
+        margin-left: 460px;
+        top: -853px;
+        width: 127px;
+    }
+
+    #decisiones1{
+        margin-left: 279px;
+        top: -765px;
+        width: 129px;
+    }
+
+    #decisiones2{
+        margin-left: 279px;
+        top: -748px;
+        width: 129px;
+    }
+    
+    #verificar{
+        width: 182px;
+        top: -725px;
+        left: 130px;
+    }
+
+    #siguiente-p4{
+        width: 182px;
+        top: -774px;
+        margin-left: 445px;
+    }
+    
+    #fin{
+        width: 565px;
+    }
+}
